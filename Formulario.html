@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="formulario.css" media="screen">
+    <title>Pesquisa de satisfação</title>
+</head>
+<body>
+    <div >
+        <h1 id="titulo">Yarlis Furtado Loja</h1>
+        <p id="subtitulo1">Olá, amiga!</p>
+        <p id="subtitulo2">Gostaríamos de receber uma avaliação sobre sua última compra.</p>
+        <br>    
+    </div>
+
+    <form>
+        
+        <div class="campo">
+            <label for="nome"><strong>Nome</strong></label>
+            <input type="text" style="width: 502px; height: 20px" name="nome" id="nome" required>
+        </div>
+        
+        <div class="campo">
+            <label for="wpp"><strong>WhatsApp</strong></label>
+            <input type="tel" style="width: 502px; height: 20px" nome="wpp" id="wpp" placeholder="99-99999-9999" maxlength="11" required> 
+        </div>
+        
+        
+        
+        <div class="campo"> 
+            <label for="email"><strong>Email</strong></label>
+            <input type="email" style="width: 502px; height: 20px" name="email" id="email" placeholder="seuemail@seuemail.com" required>
+        </div>
+
+        <div class="campo">
+            <label><strong>> Você comprou a(s) peça(s) para você?</strong></label>
+            <label>
+                <input type="radio" name="yesnoquest" valeu="yes">Sim
+            </label>
+            <label>
+                <input type="radio" name="yesnoquest" value="no">Não
+            </label>
+        </div>
+        <div class="campo">
+            <label for="nota"><strong>> De 0 a 5, como você avalia sua satisfação com o pedido?</strong></label>
+            <select id="nota">
+                <option selected desabled value="">Selecione</option>
+                <option>0</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+            </select>
+        </div>
+
+            <div id="checkbox">
+                <label><strong>> Selecione o tipo de peça que gostaria de ver com mais frequência:</strong></label>
+                <br><br>
+                <input type="checkbox" id="cropped" name="cropped" value="cropped">
+                <label for="cropped">Cropped</label>
+                <input type="checkbox" id="calça" name="calça" value="calça">
+                <label for="calça">Calça</label>
+                <input type="checkbox" id="saia" name="saia" value="saia">
+                <label for="saia">Saia</label>
+                <input type="checkbox" id="vestido" name="vestido" value="vestido">
+                <label for="vestido">Vestido</label>
+            </div>
+
+        <div class="campo">
+            <br>
+            <label><strong>> Conte um pouco da sua experiência</strong></label>
+            <textarea row="4" style="width: 502px; height: 165px;" id="experiencia" name="experiencia" placeholder="máximo 200 caracteres." maxlength="250"></textarea> 
+        </div>
+        <button type="submit" class="button">Enviar</button>
+    </form>
+</body>
+</html>
